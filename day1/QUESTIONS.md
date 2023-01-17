@@ -1,7 +1,7 @@
 # Questions Day 1
 
 ## Question 1
-The stable memory of a canister is 4 GB and 32 GB on the experimental stable memory
+A canister can store up to 48GB of data and has 4GB of running memory at the time of writing.
 
 ## Question 2
 Trying to update an immutable variable declared with "let".
