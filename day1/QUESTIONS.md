@@ -1,7 +1,12 @@
 # Questions Day 1
 
 ## Question 1
-A canister can store up to 48GB of data and has 4GB of running memory at the time of writing.
+A canister can store up to 48GB of data and has 8GB of running memory (used to be 4GB) at the time of writing.
+To convince yourself run the following command in the terminal:
+```
+dfx canister --network ic status --all
+```
+and read the `memory_allocation` field.
 
 ## Question 2
 Trying to update an immutable variable declared with "let".
