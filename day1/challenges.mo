@@ -1,6 +1,6 @@
 actor {
   // Worked on with the Motoko playground
-
+  
   // Challenge 1 Write a function multiply that takes two natural numbers and returns the product.
   public query func multiply(a : Nat, b : Nat) : async Nat {
     return a * b;
