@@ -15,8 +15,8 @@ actor {
     };
 
     // 2. Character count: Write a function that takes in a string and a character, and returns the number of occurrences of that character in the string.
-    public func count_character(t: Text, c: Char) : async Int {
-        var occurrences : Int = 0;
+    public func count_character(t: Text, c: Char) : async Nat {
+        var occurrences : Nat = 0;
         let chars = t.chars();
         for (char in chars) {
             if (char == c) {
@@ -37,8 +37,8 @@ actor {
     };
 
     // 4. Write a function number_of_words that takes a sentence and returns the number of words in the sentence.
-    public func number_of_words(sentence: Text) : async Nat {
-        let words = Text.split(sentence, #char ' ');
+    public func number_of_words(t: Text) : async Nat {
+        let words = Text.split(t, #char ' ');
         var count : Nat = 0;
         for (word in words) {
             count := count + 1;
