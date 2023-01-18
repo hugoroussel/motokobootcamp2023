@@ -1,0 +1,1 @@
+Refer to https://github.com/hugoroussel/motokobootcamp2023-coreproject for the  tasks of the core project. 
