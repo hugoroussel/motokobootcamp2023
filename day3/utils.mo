@@ -1,6 +1,7 @@
 import Array "mo:base/Array";
 import Int "mo:base/Int";
 import Option "mo:base/Option";
+import Buffer "mo:base/Buffer";
 
 actor {
   public func second_maximum(array : [Int]) : async Int {
@@ -16,8 +17,9 @@ actor {
     return onlyEven;
   };
 
-    public func drop<T>(xs : [T], n : Nat) : [T] {
-        return xs;
-    }
-
+  func drop<T>(xs : [T], n : Nat) : [T] {
+      let buf : Buffer.Buffer<T> = Buffer.fromArray(xs);
+      let subBuf : Buffer.Buffer<T> = Buffer.subBuffer(buf, n, xs.size()-n);
+      return Buffer.toArray(subBuf);
+  }
 }
